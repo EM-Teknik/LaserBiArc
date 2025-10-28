@@ -61,4 +61,5 @@ Power setting by Opacity.
 <img width="1451" height="280" alt="Skärmbild från 2025-10-21 12-26-54" src="https://github.com/user-attachments/assets/90b62dce-dbd8-48d4-85c5-8325e43dd1cf" />
 
 Burn the cat....
+
 <img width="884" height="490" alt="Skärmbild från 2025-10-21 13-51-56" src="https://github.com/user-attachments/assets/4aee7ca5-d623-411a-9bc6-68b7888821d1" />
