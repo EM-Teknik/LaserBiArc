@@ -11,7 +11,7 @@ The extension uses 3 files: (where numbers are year and month)
 ```
 laserBiArc.25.10.inx
 laserBiArc.25.10.py
-BiARC.py (library-file)
+BiArc.py (library-file)
 ```
 
  On my LinuxPC, Ubuntu 24.04  the files are in 
@@ -49,7 +49,7 @@ Everything has to be path. Use Object to path.
 ref, refpath (set the origin for G-code)
 
 Any path shape can be used to set ref. Just set ID of the path to refpath.
-REMEMBER to press the Set button in the Object Propertys menue to activate the change. The lower left corner of refpath is ref.
+REMEMBER to press the Set button in the Object Properties menue to activate the change. The lower left corner of refpath is ref.
 Note: The line width of refpath is used for the corresponding svg.
 
 I use to burn the refpath "shape" on the laser-bed. Move by hand the laser to ref. 
