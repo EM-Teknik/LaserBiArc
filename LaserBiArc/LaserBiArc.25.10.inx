@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
+  <name>LaserBiArc.25.10 (Rev 1)</name>
+  <id>EM-Teknik.LaserBiArc.25.10</id>
+ 
+      <label>Create Gcode-files Linear or Linear and Arc Gcodes (BiArc checked).</label> 
+	  <param name="laser_on_command" type="string" _gui-text="Laser ON Command:">M03</param>
+	  <param name="laser_off_command" type="string" _gui-text="Laser OFF Command:">M05</param>
+	  <param name="travel_speed" type="int" min="0" max="15000" _gui-text="Travel Speed (mm/min or in/min):">3000</param>
+	  <param name="laser_speed" type="int" min="0" max="15000" _gui-text="Laser Speed (mm/min or in/min):">750</param>
+	  <param name="laser_power" type="int" min="0" max="20000" _gui-text="Laser Power S# (0-255 or 0-12000):">255</param>
+      <label>Note! Laser power is scaled by Opacity setting for each path .</label> 
+
+      <param name="biarc" type="bool" gui-text="BiArc (G2/G3 gcodes) unchecked Linear(G1 gcodes)">false</param>
+      <param name="flatness" type="float" min="0.05" max="10.0" gui-text="Linear(G1) flatness (0.05-10):">1</param>
+
+	  <param name="passes" type="int" min="1" max="10" _gui-text="Passes (1-10):">1</param>
+      <param name="save1" type="bool" gui-text="Save to 1: (Note..use / or \ as last char)">true</param>
+      <param name="folder1" type="path"  gui-text="Folder 1:" mode="folder"/>
+      <param name="filename1" type="string" _gui-text="Filename 1:">output.gcode</param>
+      <param name="save2" type="bool" gui-text="Save to 2: (Note..use / or \ as last char)">true</param>
+      <param name="folder2" type="path"  gui-text="Folder 2:" mode="folder"/>
+      <param name="filename2" type="string" _gui-text="Filename 2:">my_test.gcode</param>
+
+	  <param name="dn" type="int" min="0" max="5" _gui-text="debug 0=off">0</param>
+      <label>Documentation: https://github.com/EM-Teknik/LaserBiArc</label> 
+	
+  
+  
+  <effect>
+    <effects-menu>
+      <submenu name="EM-Teknik"/>
+    </effects-menu>
+  </effect>
+  <script>
+    <command location="inx" interpreter="python">LaserBiArc.25.10.py</command>
+  </script>
+</inkscape-extension>
