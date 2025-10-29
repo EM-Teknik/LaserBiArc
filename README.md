@@ -36,7 +36,7 @@ First time used Folder and filename has to be set.
 
 Use one filename for "production" and one for testing. (no autonumbering)
 
-<img width="532" height="775" alt="Skärmbild från 2025-10-20 18-37-31" src="https://github.com/user-attachments/assets/d474c7a5-e9bb-4381-87ed-f88148a8c811" />
+<img width="511" height="750" alt="bild" src="https://github.com/user-attachments/assets/9185a4f8-68f0-4b22-86fa-4a1cd567133a" />
 
 Example 
 
