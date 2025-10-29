@@ -9,17 +9,22 @@ https://github.com/domoszlai/juicy-gcode/blob/master/src/Approx/BiArc.hs
 
 The extension uses 3 files: (where numbers are year and month)
 ```
-laserBiArc.25.10.inx
-laserBiArc.25.10.py
+LaserBiArc.25.10.inx
+LaserBiArc.25.10.py
 BiArc.py (library-file)
 ```
+The folder LaserBiArc containing these files can ba copied to the extensions folder.
 
  On my LinuxPC, Ubuntu 24.04  the files are in 
 ```
  /home/jan/.config/inkscape/extensions 
 ```
 
-Inkscape v.1.4.2 (installed using PPA, not snap)
+The Inkscape extensions folder is found via
+Edit > Preferences > System > User extensions in the program's settings
+
+My Inkscape v.1.4.2 (installed using PPA, not snap).  
+Inkscape >= 1.0 required.
 
 Extensions -> EM-Teknik is the submenue.
 
