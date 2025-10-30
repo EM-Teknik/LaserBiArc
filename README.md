@@ -69,6 +69,11 @@ Burn the cat....
 
 <img width="884" height="490" alt="Skärmbild från 2025-10-21 13-51-56" src="https://github.com/user-attachments/assets/4aee7ca5-d623-411a-9bc6-68b7888821d1" />
 
+Dedicated to my first follower.. Yumi...  https://github.com/yumiaura
+
+<img width="980" height="622" alt="Skärmbild från 2025-10-30 09-16-58" src="https://github.com/user-attachments/assets/d5d572b5-a1d8-482a-90d5-a919197e6424" />
+
+
 Just press play...
 
 <img width="1498" height="814" alt="Skärmbild från 2025-10-29 21-54-27" src="https://github.com/user-attachments/assets/cb913045-5697-430b-9545-41740f2bbe2d" />
