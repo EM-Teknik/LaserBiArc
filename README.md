@@ -73,8 +73,17 @@ Dedicated to my first follower.. Yumi...  https://github.com/yumiaura
 
 <img width="980" height="622" alt="Skärmbild från 2025-10-30 09-16-58" src="https://github.com/user-attachments/assets/d5d572b5-a1d8-482a-90d5-a919197e6424" />
 
+Model Airplane (uses exact interpolation for wing ribs .. extension to be relesed)
 
-Just press play...
+<img width="1302" height="845" alt="Skärmbild från 2025-11-01 14-35-30" src="https://github.com/user-attachments/assets/9772f29f-fe28-496c-a940-c7e50036620f" />
+
+<img width="983" height="646" alt="Skärmbild från 2025-11-01 14-32-04" src="https://github.com/user-attachments/assets/892dcf13-c640-4951-9d40-2769fd909900" />
+
+<img width="889" height="417" alt="Skärmbild från 2025-11-01 14-31-02" src="https://github.com/user-attachments/assets/0c7aa240-08f1-465c-85b3-ed217b2e6094" />
+
+<img width="1317" height="990" alt="bild" src="https://github.com/user-attachments/assets/4dca75b5-cdb9-4892-ac2e-aaf8d0cd9477" />
+
+Load G-code in to bCNC and...Just press play...
 
 <img width="1498" height="814" alt="Skärmbild från 2025-10-29 21-54-27" src="https://github.com/user-attachments/assets/cb913045-5697-430b-9545-41740f2bbe2d" />
 
