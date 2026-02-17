@@ -67,7 +67,7 @@ Everything has to be path. Use Object to path.
 
 ref, refpath (set the origin for G-code)
 
-New: refpathr and refpathl are automatic inserted to document. Delete the one you dont want to use. 
+New: refpathr and refpathl are automatic inserted into the document. Delete the one you dont want to use. 
 The ID refpath is no longer used.
 
 Any path shape can be used to set ref. Just set ID of the path to refpath. (refpathr or refpathl).
@@ -75,6 +75,8 @@ REMEMBER to press the Set button in the Object Properties menue to activate the 
 Note: The line width and color of refpath is used for the corresponding svg.
 
 I use to burn the refpath "shape" on the laser-bed. Move by hand the laser to ref. 
+
+Below is refpath in the old version corresponds to refpathl in the new version.
 
 <img width="1069" height="635" alt="Skärmbild från 2025-10-21 11-46-16" src="https://github.com/user-attachments/assets/d6d592f5-07a8-4637-ab71-8bd5318b2d6a" />
 
