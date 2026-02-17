@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
+  <name>LaserBiArc2602</name>
+  <id>EM-Teknik.LaserBiArc2602</id>
+ 
+    <label>Create Gcode-files Linear or Linear and Arc Gcodes.</label> 
+	<param name="laser_on_command" type="string" _gui-text="Laser ON Command:">M03</param>
+	<param name="laser_off_command" type="string" _gui-text="Laser OFF Command:">M05</param>
+	<param name="travel_speed" type="int" min="0" max="15000" _gui-text="Travel Speed (mm/min or in/min):">3000</param>
+	<param name="laser_speed" type="int" min="0" max="15000" _gui-text="Laser Speed (mm/min or in/min):">750</param>
+	<param name="laser_power" type="int" min="0" max="20000" _gui-text="Laser Power S# (0-255 or 0-12000):">255</param>
+    <param name="laser_power_scaled" type="bool" gui-text="Laser power is scaled by Opacity setting for each path">true</param> 
+    <!--<param name="sel_refpath_right" type="bool" gui-text="use refpath right bottom corner">true</param> -->
+    <param name="zmove" type="int" min="0" max="10" _gui-text="Z-axis move (if 0, no Z-axis codes are generated) (0-10):">1</param> 
+    <param name="biarc" type="bool" gui-text="BiArc (G2/G3 gcodes) unchecked Linear(G1 gcodes)">true</param>
+    <!--<param name="use_inflP" type="bool" gui-text="Use inflection points">true</param> -->
+    <param name="flatness" type="float" min="0.05" max="10.0" gui-text="Linear(G1) flatness (0.05-10):">1</param>
+	<param name="passes" type="int" min="1" max="10" _gui-text="Passes (1-10):">1</param>
+    <param name="save1" type="bool" gui-text="Save to 1: (Note..use / (Linux) or \ (Windows) as last char)">true</param>
+    <param name="folder1" type="path"  gui-text="Folder 1:" mode="folder"/>
+    <param name="filename1" type="string" _gui-text="Filename 1:">output2602.gcode</param>
+    <!-- <param name="save2" type="bool" gui-text="Save to 2: (Note..use / or \ as last char)">true</param> -->
+    <!-- <param name="folder2" type="path"  gui-text="Folder 2:" mode="folder"/> -->
+    <!-- <param name="filename2" type="string" _gui-text="Filename 2:">test2602.gcode</param> -->
+	<param name="dn" type="int" min="0" max="9" _gui-text="debug 0=off">0</param>
+    <label>Documentation: https://github.com/EM-Teknik/LaserBiArc</label> 
+	
+  <effect needs-live-preview="false">
+    <effects-menu>
+      <submenu name="EM-Teknik"/>
+    </effects-menu>
+  </effect>
+  <script>
+    <command location="inx" interpreter="python">LaserBiArc2602.py</command>
+  </script>
+</inkscape-extension>
