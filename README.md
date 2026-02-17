@@ -1,5 +1,8 @@
 # LaserBiArc
+
 Inkscape Extension for Laser Engravers/Cutters. Generates G-Codes using BiArcs. (G2/G3 G-Codes)
+
+New improved version ..2602.. (old for reference) The BiArc.py library file is now altered.
 
 The heart of this extension is BiArc.py which is a translation from haskell code BiArc.hs
 
@@ -9,6 +12,11 @@ https://github.com/domoszlai/juicy-gcode/blob/master/src/Approx/BiArc.hs
 
 The extension uses 3 files: (where numbers are year and month)
 ```
+New:
+LaserBiArc2602.inx
+LaserBiArc2602.py
+BiArc2602.py
+Old:
 LaserBiArc.25.10.inx
 LaserBiArc.25.10.py
 BiArc.py (library-file)
@@ -34,7 +42,13 @@ Select paths, Use Extension->EM-Teknik->laserBiArc.25.10, Apply
 
 First time used Folder and filename has to be set.
 
-Use one filename for "production" and one for testing. (no autonumbering)
+New: (takes less space .. good for older laptops) 
+
+Note: Z-axis move set to zero .. No Z-axis gcodes are generated (for my 10 W Longer Laser-engraver)
+
+<img width="473" height="643" alt="Skärmbild från 2026-02-17 21-07-09" src="https://github.com/user-attachments/assets/50ec6fec-5972-4e86-b03d-bce501d36c03" />
+
+Old:
 
 <img width="511" height="750" alt="bild" src="https://github.com/user-attachments/assets/9185a4f8-68f0-4b22-86fa-4a1cd567133a" />
 
@@ -53,9 +67,12 @@ Everything has to be path. Use Object to path.
 
 ref, refpath (set the origin for G-code)
 
-Any path shape can be used to set ref. Just set ID of the path to refpath.
-REMEMBER to press the Set button in the Object Properties menue to activate the change. The lower left corner of refpath is ref.
-Note: The line width of refpath is used for the corresponding svg.
+New: refpathr and refpathl are automatic inserted to document. Delete the one you dont want to use. 
+The ID refpath is no longer used.
+
+Any path shape can be used to set ref. Just set ID of the path to refpath. (refpathr or refpathl).
+REMEMBER to press the Set button in the Object Properties menue to activate the change. The lower (new: right or left) left corner of refpath is ref.
+Note: The line width and color of refpath is used for the corresponding svg.
 
 I use to burn the refpath "shape" on the laser-bed. Move by hand the laser to ref. 
 
@@ -83,7 +100,12 @@ Model Airplane (uses exact interpolation for wing ribs .. extension to be relese
 
 <img width="1317" height="990" alt="bild" src="https://github.com/user-attachments/assets/4dca75b5-cdb9-4892-ac2e-aaf8d0cd9477" />
 
-Load G-code in to bCNC and...Just press play...
+Load G-code in to bCNC (needs Z-axis move .. set to number greater than 0)  and...Just press play...
 
 <img width="1498" height="814" alt="Skärmbild från 2025-10-29 21-54-27" src="https://github.com/user-attachments/assets/cb913045-5697-430b-9545-41740f2bbe2d" />
+
+or .. gSender (Z-axis move = 0 .. for my 10 W Longer Laser-engraver .. does not accept Z-axis gcodes)
+
+<img width="2470" height="1297" alt="bild" src="https://github.com/user-attachments/assets/a88df071-64fb-4483-831c-21dd9344b69b" />
+
 
