@@ -2,7 +2,7 @@
 
 Inkscape Extension for Laser Engravers/Cutters. Generates G-Codes using BiArcs. (G2/G3 G-Codes)
 
-New improved version ..2602.. (old for reference) The BiArc.py library file is now altered.
+New improved version ..2603.. (old for reference) The BiArc.py library file is now altered and renamed to BiArc2602.
 
 The heart of this extension is BiArc.py which is a translation from haskell code BiArc.hs
 
@@ -13,9 +13,9 @@ https://github.com/domoszlai/juicy-gcode/blob/master/src/Approx/BiArc.hs
 The extension uses 3 files: (where numbers are year and month)
 ```
 New:
-LaserBiArc2602.inx
-LaserBiArc2602.py
-BiArc2602.py
+LaserBiArc2603.inx
+LaserBiArc2603.py
+BiArc2603.py
 Old:
 LaserBiArc.25.10.inx
 LaserBiArc.25.10.py
@@ -31,14 +31,14 @@ The folder LaserBiArc containing these files can ba copied to the extensions fol
 The Inkscape extensions folder is found via
 Edit > Preferences > System > User extensions in the program's settings
 
-My Inkscape v.1.4.2 (installed using PPA, not snap).  
-Inkscape >= 1.0 required.
+My Inkscape v.1.4.2 and v1.2.2 OK (installed using PPA, not snap).  
+Inkscape >= 1.2 required...? (v1.1.. will not work)
 
 Extensions -> EM-Teknik is the submenue.
 
 This is also the home for interpolate and OpenSCAD extensions (to be released)
 
-Select paths, Use Extension->EM-Teknik->laserBiArc.25.10, Apply
+Select paths, Use Extension->EM-Teknik->laserBiArc2603, Apply
 
 First time used Folder and filename has to be set.
 
@@ -46,11 +46,8 @@ New: (takes less space .. good for older laptops)
 
 Note: Z-axis move set to zero .. No Z-axis gcodes are generated (for my 10 W Longer Laser-engraver)
 
-<img width="473" height="643" alt="Skärmbild från 2026-02-17 21-07-09" src="https://github.com/user-attachments/assets/50ec6fec-5972-4e86-b03d-bce501d36c03" />
+<img width="480" height="648" alt="image" src="https://github.com/user-attachments/assets/1347f815-01d6-45a5-87ab-baa1420790f4" />
 
-Old:
-
-<img width="511" height="750" alt="bild" src="https://github.com/user-attachments/assets/9185a4f8-68f0-4b22-86fa-4a1cd567133a" />
 
 Example 
 
