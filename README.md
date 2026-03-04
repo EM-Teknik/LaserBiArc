@@ -16,7 +16,7 @@ New:
 LaserBiArc2603.inx
 LaserBiArc2603.py
 BiArc2603.py
-Old:
+Old: (dont use)
 LaserBiArc.25.10.inx
 LaserBiArc.25.10.py
 BiArc.py (library-file)
@@ -32,7 +32,7 @@ The Inkscape extensions folder is found via
 Edit > Preferences > System > User extensions in the program's settings
 
 My Inkscape v.1.4.2 and v1.2.2 OK (installed using PPA, not snap).  
-Inkscape >= 1.2 required...? (v1.1.. will not work)
+Inkscape >= 1.2 required...? (v1.1.. does not work .. inkex too old)
 
 Extensions -> EM-Teknik is the submenue.
 
@@ -67,19 +67,24 @@ ref, refpath (set the origin for G-code)
 New: refpathr and refpathl are automatic inserted into the document. Delete the one you dont want to use. 
 The ID refpath is no longer used.
 
-Any path shape can be used to set ref. Just set ID of the path to refpath. (refpathr or refpathl).
+Any path shape can be used to set ref. Just set ID of the path to refpathr or refpathl.
 REMEMBER to press the Set button in the Object Properties menue to activate the change. The lower (new: right or left) left corner of refpath is ref.
 Note: The line width and color of refpath is used for the corresponding svg.
 
 I use to burn the refpath "shape" on the laser-bed. Move by hand the laser to ref. 
 
-Below is refpath in the old version corresponds to refpathl in the new version.
+Below is refpathr selected. Note the Power test pattern.
 
-<img width="1069" height="635" alt="Skärmbild från 2025-10-21 11-46-16" src="https://github.com/user-attachments/assets/d6d592f5-07a8-4637-ab71-8bd5318b2d6a" />
+<img width="2301" height="1296" alt="image" src="https://github.com/user-attachments/assets/de6329e2-b0f2-4afe-997e-23e14749872e" />
 
 Power setting by Opacity.
 
 <img width="1451" height="280" alt="Skärmbild från 2025-10-21 12-26-54" src="https://github.com/user-attachments/assets/90b62dce-dbd8-48d4-85c5-8325e43dd1cf" />
+
+Doggo from domoszlai...
+
+<img width="1438" height="605" alt="image" src="https://github.com/user-attachments/assets/94ceb8d4-8ca5-4ea9-978f-cb8c46030d55" />
+
 
 Burn the cat....
 
