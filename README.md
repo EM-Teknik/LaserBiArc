@@ -143,7 +143,7 @@ GCode is generated for the selected path.
 
 Before step 2 you can edit the toolpath. (gear example)
 
-1. The inner corner will owercut.
+1. The inner corner will overcut.
 2. Add nodes on the line or arc.
 3. Delete some end nodes and not nessesary nodes ... done
 
