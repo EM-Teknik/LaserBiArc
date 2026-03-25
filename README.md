@@ -2,7 +2,9 @@
 
 Inkscape Extension for Laser Engravers/Cutters. Generates G-Codes using BiArcs. (G2/G3 G-Codes)
 
-New improved version ..2603.. (old for reference) The BiArc.py library file is now altered and renamed to BiArc2602.
+The T (Tool) version can make tool compensated G-Code for cutters.
+
+New improved version ..2603B.. (old for reference) The BiArc.py library file is now altered and renamed to BiArc2603B.
 
 The heart of this extension is BiArc.py which is a translation from haskell code BiArc.hs
 
@@ -13,13 +15,12 @@ https://github.com/domoszlai/juicy-gcode/blob/master/src/Approx/BiArc.hs
 The extension uses 3 files: (where numbers are year and month)
 ```
 New:
-LaserBiArc2603.inx
-LaserBiArc2603.py
-BiArc2603.py
+LaserBiArc2603BT.inx
+LaserBiArc2603BT.py
+BiArc2603B.py
 Old: (dont use)
-LaserBiArc.25.10.inx
-LaserBiArc.25.10.py
-BiArc.py (library-file)
+...
+BiArc.py (original library-file for reference)
 ```
 The folder LaserBiArc containing these files can ba copied to the extensions folder.
 
@@ -112,4 +113,43 @@ or .. gSender (Z-axis move = 0 .. for my 10 W Longer Laser-engraver .. does not 
 
 <img width="2470" height="1297" alt="bild" src="https://github.com/user-attachments/assets/a88df071-64fb-4483-831c-21dd9344b69b" />
 
+Longer 10W laser
+
+![20260315_123412](https://github.com/user-attachments/assets/dd5664ea-3e47-43b4-aee2-e40c52c7a86d)
+
+
+Tool:  toolpathl or toolpatr (works only when BiArc is selected)
+
+# IMPORTANT !! The spindle control is the same as for Laser. On/Off for each path. Use manual control for the spindle !!
+
+First: 
+
+To enable toolpath create a path, set path ID to toolpathl or toolpatr, set color and pen width (is tool diameter)
+
+To disable .. delete the "toolpath" or change ID. (below the "toolpath" is selected .. check the ID .. remember the Set button)
+
+Then:
+
+This is a 2 stage process.
+
+1. Select path to use. Apply.
+toolpathl creates a path at left side of selected path. toolpathr creates a path at right.
+GCode is generated for the selected path.
+ 
+2. Select the new created toolpath and press Apply again. This is the GCode for the cutter.
+
+
+<img width="2082" height="793" alt="Skärmbild från 2026-03-24 17-10-40" src="https://github.com/user-attachments/assets/3bedbba6-4f1d-4961-bf16-ae61eeedc4b1" />
+
+Before step 2 you can edit the toolpath. (gear example)
+
+1. The inner corner will owercut.
+2. Add nodes on the line or arc.
+3. Delete some end nodes and not nessesary nodes ... done
+
+<img width="949" height="984" alt="Skärmbild från 2026-03-24 16-53-28" src="https://github.com/user-attachments/assets/7434b864-7f84-499b-99cc-44f47914508e" />
+
+Flipping a path shifts inner/outercut. (dots here shows the original path)
+
+<img width="732" height="834" alt="Skärmbild från 2026-03-24 17-04-15" src="https://github.com/user-attachments/assets/3ee37305-476b-44cc-8d1c-6c00fe0b74dd" />
 
